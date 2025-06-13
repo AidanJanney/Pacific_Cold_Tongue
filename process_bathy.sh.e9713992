@@ -1,0 +1,7 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) ncarenv/24.12
+
+Lmod is automatically replacing "ncarenv/24.12" with "ncarenv-basic/24.12".
+

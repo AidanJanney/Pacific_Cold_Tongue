@@ -1,0 +1,18 @@
+Starting job at Tue Jun 10 12:49:43 MDT 2025
+ Starting weight generation with these inputs: 
+   Source File: bathymetry_original_attrs.nc
+   Destination File: bathymetry_unfinished.nc
+   Source variable names: depth
+   Destination variable names: depth
+   Souce Grid has a mask, using missingvalue   -1.0000000000000000E+020
+   Source File is in GRIDSPEC format with coordinate names lon lat
+   Source Grid is a regional grid
+   Destination File is in GRIDSPEC format with coordinate names lon lat
+   Destination Grid is a regional grid
+   Destination Grid has a mask, using missing value                        NaN
+   Regrid Method: bilinear
+   Pole option: NONE
+
+PIO2 pio_file.c retry NETCDF
+ Completed file regrid successfully.
+
