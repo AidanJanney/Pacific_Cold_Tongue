@@ -2,7 +2,7 @@
 #PBS -N process_bathy.sh
 #PBS -A p93300012
 #PBS -l select=1:ncpus=32
-#PBS -l walltime=00:30:00
+#PBS -l walltime=00:20:00
 #PBS -q main
 #PBS -m abe
 
@@ -13,4 +13,4 @@ module load cray-mpich/8.1.29
 module load esmf/8.8.0
 
 echo "Starting job at `date`"
-mpirun -np 30 ESMF_Regrid -s bathymetry_original_attrs.nc -d bathymetry_unfinished.nc -m bilinear --src_var depth --dst_var depth --netcdf4 --src_regional --dst_regional
+mpirun -wd ./mpi_logs -np 30 ESMF_Regrid -s bathymetry_original.nc -d bathymetry_unfinished.nc -m bilinear --src_var depth --dst_var depth --netcdf4 --src_regional --dst_regional
